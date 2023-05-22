@@ -1,17 +1,17 @@
 version: '3.7'
 services:
-  drone-delivery-web:
-    build: ./web
-    ports:
-      - '3000:3000'
-    environment:
-      - BASE_URL=http://localhost:3333
-    depends_on:
-      - drone-delivery-server
-
   drone-delivery-server:
     build: ./server
     ports:
       - '3333:3333'
     environment:
       - PORT=3333
+
+  drone-delivery-web:
+    build: ./web
+    ports:
+      - '5173:5173'
+    environment:
+      - API_URL=http://localhost:3333
+    depends_on:
+      - drone-delivery-server
