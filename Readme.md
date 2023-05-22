@@ -12,7 +12,9 @@ This app is made with
   - Testing (100% unit/e2e coverage)
 - Docker
 
-## How to run
+You can see the app working in production on [https://drone-delivery-bc93amlga-thejoaov.vercel.app/](https://drone-delivery-bc93amlga-thejoaov.vercel.app/)
+
+## How to run locally
 First, you should clone the repository with
 ```sh
 git clone --recurse-submodules https://github.com/thejoaov/drone-delivery
