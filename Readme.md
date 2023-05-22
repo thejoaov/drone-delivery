@@ -9,6 +9,7 @@ This app is made with
 - Backend Server
   - NestJS
   - Typescript
+  - Testing (100% unit/e2e coverage)
 - Docker
 
 ## How to run
