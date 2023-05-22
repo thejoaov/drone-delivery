@@ -13,9 +13,15 @@ This app is made with
 - Docker
 
 ## How to run
-First, after cloning the repository, clone the submodules with
+First, you should clone the repository with
 ```sh
-git submodule update --init --recursive
+git clone --recurse-submodules https://github.com/thejoaov/drone-delivery
+```
+This will clone the repositories with the submodules.
+
+Alternatively, you can grab any update not yet pushed to this repository with
+```sh
+git submodule update --remote
 ```
 After that, run both the front `web` and the backend `server` with
 ```sh
